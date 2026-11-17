@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Google Sans Code", monospace;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(135deg, #0f1020, #21153d, #111827);
+  color: #f8fafc;
+}
+
+.container {
+  width: 100%;
+  max-width: 460px;
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+h1 {
+  text-align: center;
+  font-size: clamp(1.7rem, 5vw, 2.3rem);
+  line-height: 1.3;
+  color: #c4b5fd;
+  margin-bottom: 1rem;
+}
+
+p {
+  width: 100%;
+  min-height: 58px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: anywhere;
+  text-align: center;
+  font-size: 1rem;
+  color: #e9d5ff;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #6d28d9;
+  border-radius: 12px;
+  letter-spacing: 1px;
+}
+
+button {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus-visible {
+  outline: 3px solid #c4b5fd;
+  outline-offset: 4px;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 25px 18px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
